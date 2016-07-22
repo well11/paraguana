@@ -4,10 +4,12 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="css.css">
-	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, 	height=device-height, target-densitydpi=device-dpi" />
 	<link rel="stylesheet" href="bootstrap.css">
-	<link rel="stylesheet" href="animate.css">
-
+	<link rel="stylesheet" href="animate.cs"> 
+	<link rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake.min.css">
+	<link rel="stylesheet" href="extend.css">
+	<script src="typewriting.js"></script>
 </head> 
 <body>
 <div class="m-top"></div>
@@ -15,52 +17,78 @@
 <div class="container">
 		<div class="row">
 			<div class="col-md-4 col-md-offset-4">
-				<div class="p1 animated bounceInLeft">
+				<div class="p1 animated bounceInLeft shake-slow  red">
 					
 				</div>
-				<div class="p2 animated bounceInRight">
+				<div class="p2 animated bounceInRight shake-opacity green">
 					
 				</div>
 			</div>
 			<br>
 			<div class="col-md-4 col-md-offset-4 tp">
-				<div class="p3 animated bounceInLeft">
+				<div class="p3 animated bounceInLeft shake-chunk red">
 					
 				</div>
-				<div class="p4 animated bounceInRight">
+				<div class="p4 animated bounceInRight shake green">
 					
 				</div>
 			</div>
 			<div class="col-md-4 col-md-offset-4 tp">
-				<div class="p5 animated bounceInLeft">
+				<div class="p5 animated bounceInLeft shake-rotate red">
 					
 				</div>
-				<div class="p6 animated bounceInRight">
+				<div class="p6 animated bounceInRight shake green">
 					
 				</div>
 			</div>
 
 			<div class="col-md-4 col-md-offset-4 tp">
-				<div class="p8 animated bounceInRight">
+				<div class="p8 animated bounceInRight shake-slow red">
 					
 				</div>
 				
 			</div>
 			
 		</div>
+		<!--
 		<center>
-				<div class="paraguana animated bounceInUp">
+				<div class="paraguana animated bounceInUp ">
 					Paraguaná
+					
 				</div>
+				</center>-->
+<article>
+      <div class="blue"></div>
+      <div class="red"></div>
+      <div class="green"></div>
+    </article>
+<center>
+	<div id="padre">
+     <div id="left">Paraguaná</div>
+     <div id="terminal" class="terminal carrot shake-vertical-slow shake-constant shake-constant--hover"></div>
+</div>
+</center>
 				
+<script>
+	var typeWriting = new TypeWriting({
+    targetElement   : document.getElementsByClassName('terminal')[0],
+    inputString     : 'CODE',
+    typing_interval : 130,
+    blink_interval  : '1s',
+    cursor_color    : '#43c493',
+}, function() {
+    console.log("Rewrite() is finished");
+});
+</script>
 
-			</center>
-
+	
 
 </div>
 
 
+
 	<script src="anime-master/anime.js"></script>
 	<script src="main.js"></script>	
+	<script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
 </body>
 </html>

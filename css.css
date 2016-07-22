@@ -31,7 +31,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212121', end
 
 
 
-.paraguana:after, .paraguana:before {
+.paraguana:after{
   color: #18FFFF;
   font-size: 44px;
   animation: 2s linear 0s normal none infinite opacity;
@@ -41,6 +41,39 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212121', end
 	color: #ecf0f1;
 	font-family: gotham;
 }
+	div#padre {
+	 height:28px;
+	 width:900px;
+	text-align: center;
+}
+	div#left {
+		float:left;
+		height:28px;
+		width:250px;
+		margin-right:-5px;
+
+		font-size: 80px;
+		color: #ecf0f1;
+		font-family: gotham;
+		padding-left: 50px;
+	}
+	.typingCursor::after {
+		position: relative;	
+		left: 10px;
+		width: 20px !important;
+	}
+	div#terminal {
+		float:left;
+		width:650px;
+		position: relative;	
+		top: -10px;
+		height:28px;
+		color: #43c493;
+		font-size: 90px;
+		font-weight: 900;
+		font-family: gotham;
+		padding-left: 200px;
+	}
 
 .paraguana:after{
 	content: "CODE";
@@ -48,6 +81,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212121', end
 	font-size: 90px;
 	font-weight: 900;
 	font-family: gotham;
+}
+h1{
+	color: #f5f5f;
+}
+
+h1 span {
+    position:absolute;
+    right:0;
+    width:0;
+    
+  
+}
+
+@keyframes escribir {
+    from { width: 100% }
+    to { width:0 }
 }
 
 
@@ -138,4 +187,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212121', end
   75%,95% {
     transform: translateY(-75%);
   }
+}
+
+/*
+EFFECT
+*/
+
+
+
+.btn-edit{
+	position: relative;
+	top: -450px;
+	width: 350px;
+	border: 0;
+	border-radius: 0;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5d4a80+0,bbc9cd+50,34a47b+97 */
+	background: #5d4a80; /* Old browsers */
+	background: -moz-linear-gradient(left,  #5d4a80 0%, #bbc9cd 50%, #34a47b 97%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  #5d4a80 0%,#bbc9cd 50%,#34a47b 97%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  #5d4a80 0%,#bbc9cd 50%,#34a47b 97%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d4a80', endColorstr='#34a47b',GradientType=1 ); /* IE6-9 */
+	color: #f5f5f5;
+	font-size: 48px;
+	outline: 0;
+	box-shadow: 0 0 0 0;
+	font-family: gotham;
+
 }
